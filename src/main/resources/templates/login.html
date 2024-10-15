@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${title}">로그인 페이지</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}" />
+    <script th:src="@{/js/jquery-3.7.1.min.js}"></script>
+    <script th:src="@{/js/axios.min.js}"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>로그인</h1>
+        <form id="loginForm" method="post" action="#" th:action="@{/favorite/loginProc}">
+            <div>
+                <label for="userID">아이디</label>
+                <input type="text" id="userID" name="userID" placeholder="아이디를 입력하세요." th:value="${userID}" required />
+            </div>
+            <div>
+                <label for="password">비밀번호</label>
+                <input type="password" id="password" name="password" placeholder="비밀번호를 입력하세요." th:value="${password}" required />
+            </div>
+            <button type="submit">로그인</button>
+        </form>
+        <div>
+            <a href="/member/join">회원가입</a>
+            <a href="/member/findID">아이디찾기</a>
+            <a href="/member/findPW">비밀번호찾기</a>
+        </div>
+    </div>
+
+    <script>
+        // 아이디와 비밀번호 입력 여부 체크
+        document.querySelector('#loginForm').addEventListener('submit', function(e) {
+            const userID = document.querySelector('#userID').value.trim();
+            const password = document.querySelector('#password').value.trim();
+
+            if (userID.length < 3) {
+                alert('아이디는 3자 이상 입력하세요.');
+                e.preventDefault();
+                return;
+            }
+            if (password.length < 3) {
+                alert('비밀번호는 3자 이상 입력하세요.');
+                e.preventDefault();
+                return;
+            }
+        });
+
+        // 이전 로그인 시도 시 계정 정보 확인
+        const userID = /*[[${userID}]]*/ 'null';
+        const password = /*[[${password}]]*/ 'null';
+        if (userID && password) {
+            alert('계정을 확인하세요.');
+        }
+    </script>
+</body>
+</html>
+
+

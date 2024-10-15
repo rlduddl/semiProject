@@ -5,6 +5,10 @@ body {
   padding: 20px;
 }
 
+header {
+	text-align: right;
+}
+
 .hidden {
   display: none;
 }

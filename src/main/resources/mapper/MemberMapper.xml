@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "//mybatis.org/DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.semiProject.mapper.MemberMapper">
+
+	<select id="selectList" resultType="com.semiProject.vo.MemberVO"
+	parameterType="com.semiProject.vo.MemberVO"
+	>
+	SELECT * FROM MEMBER 
+	
+		<where>
+			<if test="userID != '' and !userID.equals('')">
+			AND userID = #{userID} 
+			</if>
+			<if test="password != '' and !password.equals('')">
+			AND password = #{password}
+			</if>
+			<if test="username != '' and !username.equals('')">
+			AND username = #{username}
+			</if>
+			<if test="email != '' and !email.equals('')">
+			AND email = #{email}
+			</if>
+			<if test="idx != null and !idx.equals(null)">
+			AND idx = #{idx}
+			</if>
+		</where>
+		
+		ORDER BY idx DESC
+			
+	</select>
+	
+	<select id="selectOne" parameterType="com.semiProject.vo.MemberVO" resultType="com.semiProject.vo.MemberVO">
+	SELECT 
+		IDX
+		, ISADMIN
+		, USERID
+		, USERNAME
+		, EMAIL
+		, REGDATE
+		, ISUSE
+		, DROPDATE 
+	FROM MEMBER
+		WHERE userID = #{userID} 
+			AND password = STANDARD_HASH(#{password}, 'SHA256')
+			AND ISUSE = 1
+			AND DROPDATE IS NULL
+	</select>
+	
+	<select id="checkUserID" parameterType="String" resultType="int">
+		SELECT COUNT(*) AS CNT
+		FROM MEMBER
+		WHERE userID = #{userID} 
+	</select>
+	
+	<select id="checkEmail" parameterType="String" resultType="int">
+		SELECT COUNT(*) AS CNT
+		FROM MEMBER
+		WHERE EMAIL = #{email}
+	</select>
+	
+	<insert id="insert" parameterType="com.semiProject.vo.MemberVO">
+		INSERT INTO MEMBER (
+			USERID
+			, PASSWORD
+			, USERNAME
+			, EMAIL
+		) VALUES (
+			#{userID}
+			, STANDARD_HASH(#{password}, 'SHA256')
+			, #{username}
+			, #{email}
+		)
+	</insert>
+	
+	<update id="update" parameterType="com.semiProject.vo.MemberVO">
+		UPDATE MEMBER  
+			<set>
+				<if test="password != '' and !password.equals('')">
+					, PASSWORD 	= STANDARD_HASH(#{password}, 'SHA256')
+				</if>
+				<if test="username != '' and !username.equals('')">
+					, USERNAME 	= #{username}
+				</if>
+			</set>
+		WHERE idx = #{idx}
+	</update>
+	
+	<delete id="delete" parameterType="com.semiProject.vo.MemberVO">
+		DELETE FROM MEMBER
+		WHERE idx = #{idx}
+	</delete>
+	
+	<update id="memberDrop" parameterType="Long">
+		UPDATE MEMBER SET 
+			ISUSE = 0 
+			, DROPDATE = SYSDATE
+		WHERE IDX = #{idx}
+	</update>
+	
+	<select id="findID" parameterType="String" resultType="String">
+		SELECT 
+			SUBSTR(userID, 1, 2) || 
+			LPAD('*', LENGTH(userID) - 2, '*') AS userID
+		FROM MEMBER
+			WHERE email = #{email}
+	</select>
+	
+	<select id="findPW" parameterType="com.semiProject.vo.MemberVO" resultType="Long">
+		SELECT idx FROM MEMBER
+		WHERE email = #{email} AND userID = #{userID}
+	</select>
+	
+	<update id="updatePW" parameterType="com.semiProject.vo.MemberVO">
+		UPDATE MEMBER SET 
+			password = STANDARD_HASH(#{password}, 'SHA256')
+		WHERE idx = #{idx}
+	</update>
+	
+	<update id="updateInfo" parameterType="com.semiProject.vo.MemberVO">
+		UPDATE MEMBER  
+			<set>
+				<if test="password != '' and !password.equals('')">
+					, PASSWORD 	= STANDARD_HASH(#{password}, 'SHA256')
+				</if>
+				<if test="username != '' and !username.equals('')">
+					, USERNAME 	= #{username}
+				</if>
+				<if test="email != '' and !email.equals('')">
+					, EMAIL 	= #{email}
+				</if>
+			</set>
+		WHERE idx = #{idx}
+	</update>
+	
+
+</mapper>
