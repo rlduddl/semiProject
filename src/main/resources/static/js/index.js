@@ -14,31 +14,13 @@ kakao.maps.load(() => {
 function initMap() {
     const mapContainer = document.getElementById("map");
     const mapOptions = {
-        center: new kakao.maps.LatLng(33.450701, 126.570667), // 기본 중심 좌표
+        center: new kakao.maps.LatLng(37.5636, 127.0427), // 성동구 중심 좌표
         level: 3, // 확대 레벨
     };
     map = new kakao.maps.Map(mapContainer, mapOptions); // 전역 변수로 지도 인스턴스 저장
 }
 
-// 주소 타입 변경 함수
-function toggleAddressType() {
-    addressType = addressType === 'site' ? 'rdn' : 'site'; // 'site'와 'rdn' 사이를 토글
-    updateStoreTable(); // 테이블 업데이트
-}
-
-// 테이블 업데이트 함수
-function updateStoreTable() {
-    const rows = document.querySelectorAll('#storeTableBody tr');
-    rows.forEach(row => {
-        const addressCell = row.cells[3]; // 주소가 4번째 열(인덱스 3)
-        if (addressType === 'site') {
-            addressCell.textContent = row.getAttribute('data-sitewhladdr') || ''; // 지번 주소
-        } else {
-            addressCell.textContent = row.getAttribute('data-rdnwhladdr') || ''; // 도로명 주소
-        }
-    });
-}
-
+// 가게 검색
 function searchStores() {
     const query = document.getElementById("storeQuery").value.trim();
     const searchResults = document.getElementById("searchResults");
@@ -66,7 +48,6 @@ function searchStores() {
             return;
         }
 
-        // 검색 결과가 있을 경우
         data.documents.forEach((store) => {
             const li = document.createElement("li");
             li.textContent = `${store.place_name} - ${store.address_name}`;
@@ -76,7 +57,6 @@ function searchStores() {
                 document.getElementById("storeId").value = selectedStore;
                 document.getElementById("addFavoriteBtn").scrollIntoView({ behavior: "smooth" });
             };
-
             searchResults.appendChild(li);
         });
     })
@@ -151,22 +131,3 @@ function removeFavorite(storeId) {
         alert(`${storeId} 는 즐겨찾기 목록에 없습니다.`);
     }
 }
-
-// 가게 검색 필터링
-function filterStores() {
-    const query = document.getElementById('storeQuery').value.toLowerCase();
-    const rows = document.querySelectorAll('#storeTableBody tr');
-
-    rows.forEach(row => {
-        const storeName = row.cells[1].textContent.toLowerCase(); // 사업장명
-        if (storeName.includes(query)) {
-            row.style.display = ''; // 보여주기
-        } else {
-            row.style.display = 'none'; // 숨기기
-        }
-    });
-}
-
-
-
-
