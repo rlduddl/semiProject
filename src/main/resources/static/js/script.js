@@ -1,5 +1,7 @@
 let storeIds = JSON.parse(localStorage.getItem("favoriteStores")) || [];
 const API_KEY = "78a4b456e0a19ac893591fb5dc67d523"; // JavaScript key
+let selectedStore;
+let map; // 전역 변수로 지도 저장
 
 kakao.maps.load(() => {
     initMap();
@@ -13,14 +15,12 @@ function initMap() {
         center: new kakao.maps.LatLng(33.450701, 126.570667), // 기본 중심 좌표
         level: 3, // 확대 레벨
     };
-    new kakao.maps.Map(mapContainer, mapOptions);
+    map = new kakao.maps.Map(mapContainer, mapOptions); // 전역 변수로 지도 인스턴스 저장
 }
 
 function searchStores() {
     const query = document.getElementById("storeQuery").value.trim();
     const searchResults = document.getElementById("searchResults");
-    const mapHeader = document.getElementById("mapHeader");
-    const mapDiv = document.getElementById("map");
     searchResults.innerHTML = ""; // 이전 검색 결과 초기화
 
     if (!query) {
@@ -28,11 +28,11 @@ function searchStores() {
         return;
     }
 
-	fetch(`https://dapi.kakao.com/v2/local/search/keyword.json?query=${encodeURIComponent(query)}`, {
-	    headers: {
-	        Authorization: `KakaoAK ${API_KEY}`, // 공백 확인
-	    },
-	})
+    fetch(`https://dapi.kakao.com/v2/local/search/keyword.json?query=${encodeURIComponent(query)}`, {
+        headers: {
+            Authorization: `KakaoAK ${API_KEY}`,
+        },
+    })
     .then((response) => {
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
@@ -42,15 +42,10 @@ function searchStores() {
     .then((data) => {
         if (!data.documents || data.documents.length === 0) {
             alert("검색 결과가 없습니다.");
-            mapHeader.classList.add("hidden");
-            mapDiv.classList.add("hidden");
             return;
         }
 
         // 검색 결과가 있을 경우
-        mapHeader.classList.remove("hidden");
-        mapDiv.classList.remove("hidden");
-
         data.documents.forEach((store) => {
             const li = document.createElement("li");
             li.textContent = `${store.place_name} - ${store.address_name}`;
@@ -70,26 +65,19 @@ function searchStores() {
     });
 }
 
-
 // 주소로 위치 표시
 function showLocation(address) {
-    const mapContainer = document.getElementById("map");
-    const mapOptions = {
-        center: new kakao.maps.LatLng(33.450701, 126.570667),
-        level: 3,
-    };
-    const map = new kakao.maps.Map(mapContainer, mapOptions);
     const geocoder = new kakao.maps.services.Geocoder();
 
     geocoder.addressSearch(address, function (result, status) {
         if (status === kakao.maps.services.Status.OK) {
             const coords = new kakao.maps.LatLng(result[0].y, result[0].x);
+            map.setCenter(coords); // 지도 중심을 결과 좌표로 설정
             const marker = new kakao.maps.Marker({ map: map, position: coords });
             const infowindow = new kakao.maps.InfoWindow({
                 content: `<div style="width:150px;text-align:center;padding:6px 0;">${address}</div>`,
             });
             infowindow.open(map, marker);
-            map.setCenter(coords);
         }
     });
 }
@@ -100,9 +88,9 @@ function addFavorite() {
         storeIds.push(selectedStore);
         localStorage.setItem("favoriteStores", JSON.stringify(storeIds));
         updateFavoriteList();
-        alert(` ${selectedStore} 가 즐겨찾기 목록에 추가되었습니다.`);
+        alert(`${selectedStore} 가 즐겨찾기 목록에 추가되었습니다.`);
     } else if (storeIds.includes(selectedStore)) {
-        alert(` ${selectedStore} 는 이미 즐겨찾기 목록에 있습니다.`);
+        alert(`${selectedStore} 는 이미 즐겨찾기 목록에 있습니다.`);
     } else {
         alert("가게를 선택하세요.");
     }
@@ -141,4 +129,24 @@ function removeFavorite(storeId) {
     } else {
         alert(`${storeId} 는 즐겨찾기 목록에 없습니다.`);
     }
+}
+
+// 가게 목록 페이지로 이동
+function showStoreList() {
+    window.location.href = '/favorite/storeList'; // 가게 목록 페이지로 이동
+}
+
+// 가게 검색 필터링
+function filterStores() {
+    const query = document.getElementById('storeQuery').value.toLowerCase();
+    const rows = document.querySelectorAll('#storeTableBody tr');
+
+    rows.forEach(row => {
+        const storeName = row.cells[1].textContent.toLowerCase(); // 사업장명
+        if (storeName.includes(query)) {
+            row.style.display = ''; // 보여주기
+        } else {
+            row.style.display = 'none'; // 숨기기
+        }
+    });
 }
