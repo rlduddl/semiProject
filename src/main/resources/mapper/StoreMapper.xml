@@ -5,5 +5,7 @@
 <mapper namespace="com.semiProject.mapper.StoreMapper">
     <select id="getAllStores" resultType="com.semiProject.vo.StoreInfoVO">
         SELECT * FROM STORE_INFO
+        WHERE TRDSTATENM != '폐업'
+        ORDER BY BPLCNM      
     </select>
 </mapper>

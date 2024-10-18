@@ -20,25 +20,27 @@
         
         <button onclick="location.href='/'">즐겨찾기</button>
         <button id="changeAddressTypeBtn">주소 타입 변경</button>
-		<button id="toggleClosedStoresBtn">가게 상태</button>   
+	<!--<button id="toggleClosedStoresBtn">가게 상태</button> -->	  
         <h2>가게 목록</h2>
         <table>
             <thead>
-                <tr>
-                    <th>관리번호</th>
+                <tr>                 
                     <th>사업장명</th>
                     <th>전화번호</th>
                     <th>주소</th>
-                    <th>상태</th>
+            <!--    <th>상태</th>--> 
+					
                 </tr>
             </thead>
             <tbody id="storeTableBody">
                 <tr th:each="store : ${storeList}">
-                    <td th:text="${store.mgtNo}"></td>
-                    <td th:text="${store.bplcnm}"></td>
+                    <td><a  th:text="${store.bplcnm}" th:href="@{/(shopName=${store.bplcnm})}"></a></td>
                     <td th:text="${store.sitetel}"></td>
-                    <td><span class="rdnwhladdr " th:text="${store.rdnwhladdr}"></span> <span class="sitewhladdr none" th:text="${store.sitewhladdr}"></span></td>
-                    <td th:text="${store.trdstatenm}"></td>
+                    <td><span class="rdnwhladdr " th:text="${store.rdnwhladdr}"></span> 
+						<span class="sitewhladdr none" th:text="${store.sitewhladdr}"></span>
+					</td>
+          <!--      <td th:text="${store.trdstatenm}"></td> -->
+		  			
                 </tr>
             </tbody>
         </table>

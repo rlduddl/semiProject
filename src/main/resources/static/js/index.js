@@ -6,7 +6,7 @@ let addressType = 'rdn'; // 초기 주소 타입 설정
 
 // 카카오 맵 로드 및 초기화
 kakao.maps.load(() => {
-    initMap();
+    initMap();	
     updateFavoriteList();
 });
 
@@ -52,7 +52,7 @@ function searchStores() {
             const li = document.createElement("li");
             li.textContent = `${store.place_name} - ${store.address_name}`;
             li.onclick = () => {
-                showLocation(store.address_name);
+                showLocation(store.address_name, store.place_url); // URL도 넘겨줌
                 selectedStore = store.place_name;
                 document.getElementById("storeId").value = selectedStore;
                 document.getElementById("addFavoriteBtn").scrollIntoView({ behavior: "smooth" });
@@ -67,14 +67,31 @@ function searchStores() {
 }
 
 // 주소로 위치 표시
-function showLocation(address) {
+function showLocation(address, placeUrl) {
     const geocoder = new kakao.maps.services.Geocoder();
 
     geocoder.addressSearch(address, function (result, status) {
         if (status === kakao.maps.services.Status.OK) {
             const coords = new kakao.maps.LatLng(result[0].y, result[0].x);
             map.setCenter(coords); // 지도 중심을 결과 좌표로 설정
-            const marker = new kakao.maps.Marker({ map: map, position: coords });
+
+            // 작은 마커 이미지 URL
+            const imageSrc = 'https://cdn-icons-png.flaticon.com/512/148/148836.png', // 작은 위치 마커 이미지 URL
+                imageSize = new kakao.maps.Size(30, 30),  // 마커 크기 조정
+                imageOption = { offset: new kakao.maps.Point(15, 30) };
+
+            const markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption);
+            const marker = new kakao.maps.Marker({
+                map: map,
+                position: coords,
+                image: markerImage,
+            });
+
+            // 마커 클릭 시 링크로 이동
+            kakao.maps.event.addListener(marker, 'click', function() {
+                window.open(placeUrl, '_blank'); // 새 창에서 링크 열기
+            });
+
             const infowindow = new kakao.maps.InfoWindow({
                 content: `<div style="width:150px;text-align:center;padding:6px 0;">${address}</div>`,
             });
