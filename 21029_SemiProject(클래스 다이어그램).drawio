@@ -1,0 +1,637 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.8.3">
+  <diagram name="페이지-1" id="0L0S7nNnJKIBoQ1xlU_W">
+    <mxGraphModel dx="3541" dy="828" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-131" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="810" y="1430" width="1040" height="1010" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-6" value="FavoriteStoreMapper" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="390" y="1962" width="280" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="RS2OPRWRwBh1YJsDiA-l-6" vertex="1">
+          <mxGeometry y="26" width="280" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-8" value="+&amp;nbsp;selectAllFavorites(): List&amp;lt;FavoriteStoreVO&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="RS2OPRWRwBh1YJsDiA-l-6" vertex="1">
+          <mxGeometry y="34" width="280" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-9" value="FavoriteStoreServiceImpl" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="20" y="1962" width="300" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-10" value="&lt;strong&gt;Attributes&lt;/strong&gt;&lt;ul&gt;&lt;li&gt;favoriteStoreMapper: FavoriteStoreMapper&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="RS2OPRWRwBh1YJsDiA-l-9" vertex="1">
+          <mxGeometry y="26" width="300" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-11" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="RS2OPRWRwBh1YJsDiA-l-9" vertex="1">
+          <mxGeometry y="90" width="300" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-12" value="+&amp;nbsp;getAllFavorites(): List&amp;lt;FavoriteStoreVO&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="RS2OPRWRwBh1YJsDiA-l-9" vertex="1">
+          <mxGeometry y="98" width="300" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-13" value="FavoriteStoreService" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-340" y="1962" width="246" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-14" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="RS2OPRWRwBh1YJsDiA-l-13" vertex="1">
+          <mxGeometry y="26" width="246" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-15" value="+&amp;nbsp;getAllFavorites(): List&amp;lt;FavoriteStoreVO&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="RS2OPRWRwBh1YJsDiA-l-13" vertex="1">
+          <mxGeometry y="34" width="246" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-16" value="favoriteListController" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-680" y="1957" width="240" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-17" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="RS2OPRWRwBh1YJsDiA-l-16" vertex="1">
+          <mxGeometry y="26" width="240" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-18" value="+ getAllFavorites(): ResponseEntity&amp;lt;List&amp;lt;FavoriteStoreVO&amp;gt;&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="RS2OPRWRwBh1YJsDiA-l-16" vertex="1">
+          <mxGeometry y="34" width="240" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-23" value="&lt;h3&gt;클래스 관계&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;&lt;code&gt;FavoriteListController&lt;/code&gt;는 &lt;code&gt;FavoriteStoreService&lt;/code&gt;를 사용하여 전체 즐겨찾기 목록을 가져옵니다.&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;&lt;code&gt;FavoriteStoreServiceImpl&lt;/code&gt;은 &lt;code&gt;FavoriteStoreService&lt;/code&gt; 인터페이스를 구현하며, &lt;code&gt;FavoriteStoreMapper&lt;/code&gt;를 통해 데이터베이스와 상호작용합니다.&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;&lt;code&gt;favoriteList.html&lt;/code&gt;에서 사용되는 JavaScript는 사용자 인터페이스를 관리하고 API와의 통신을 처리합니다.&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;HTML 요소들은 JavaScript 함수와 연결되어 이벤트를 처리합니다.&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;CommonController 에서 favoriteList 페이지를 @GetMapping 방식으로 ModelAndView에 담아서 리턴합니다.&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;HTML 에서 &amp;lt;UL&amp;gt; 리스트부분은 DB에 있는 테이블 FAVORITE_STORES 에서 값을 가져와 USERIDX가 중복되면 새로운 변수인 COUNT로 재정의해서 표현&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="-800" y="1617" width="890" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-24" value="" style="endArrow=none;html=1;rounded=0;entryX=-0.004;entryY=0.375;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1.013;exitY=0.394;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="RS2OPRWRwBh1YJsDiA-l-18" target="RS2OPRWRwBh1YJsDiA-l-15" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-20" y="2107" as="sourcePoint" />
+            <mxPoint x="30" y="2057" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-25" value="" style="endArrow=classic;html=1;rounded=0;exitX=1.004;exitY=0.357;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="RS2OPRWRwBh1YJsDiA-l-15" target="RS2OPRWRwBh1YJsDiA-l-10" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-20" y="1807" as="sourcePoint" />
+            <mxPoint x="30" y="1757" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-26" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="RS2OPRWRwBh1YJsDiA-l-10" target="RS2OPRWRwBh1YJsDiA-l-8" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-20" y="2307" as="sourcePoint" />
+            <mxPoint x="30" y="2257" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-27" value="&lt;span style=&quot;text-align: left;&quot;&gt;FAVORITE_STORES&lt;/span&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1294" y="1855" width="210" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-28" value="- USERIDX : VARCHAR2&lt;div&gt;-&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;STORE_NAME : NUMBER&lt;/span&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="RS2OPRWRwBh1YJsDiA-l-27" vertex="1">
+          <mxGeometry y="26" width="210" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-29" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="RS2OPRWRwBh1YJsDiA-l-27" vertex="1">
+          <mxGeometry y="60" width="210" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-30" value="MEMBERSHIP" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="914" y="1850" width="280" height="268" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-31" value="" style="endArrow=none;html=1;rounded=0;" parent="RS2OPRWRwBh1YJsDiA-l-30" target="RS2OPRWRwBh1YJsDiA-l-28" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="90" y="40" as="sourcePoint" />
+            <mxPoint x="140" y="-10" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-32" value="&lt;div&gt;- IDX : NUMBER&lt;/div&gt;- PASSWORD : : VARCHAR2&lt;br style=&quot;padding: 0px; margin: 0px;&quot;&gt;- ISADMIN : NUMBER&lt;br style=&quot;padding: 0px; margin: 0px;&quot;&gt;- MEMBERSHIP : VARCHAR2&lt;br style=&quot;padding: 0px; margin: 0px;&quot;&gt;- EMAIL : VARCHAR2&lt;br style=&quot;padding: 0px; margin: 0px;&quot;&gt;- PHONENUMBER : VARCHAR2&lt;br style=&quot;padding: 0px; margin: 0px;&quot;&gt;- USERID : VARCHAR2&lt;br style=&quot;padding: 0px; margin: 0px;&quot;&gt;- ISUSE : NUMBER&lt;br style=&quot;padding: 0px; margin: 0px;&quot;&gt;- USERNAME : VARCHAR2&lt;br style=&quot;padding: 0px; margin: 0px;&quot;&gt;- REGDATE : DATE&lt;br style=&quot;padding: 0px; margin: 0px;&quot;&gt;- DROPDATE : DATE" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="RS2OPRWRwBh1YJsDiA-l-30" vertex="1">
+          <mxGeometry y="26" width="280" height="234" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-33" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="RS2OPRWRwBh1YJsDiA-l-30" vertex="1">
+          <mxGeometry y="260" width="280" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-34" value="STORE_INFO" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1604" y="1640" width="160" height="724" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-35" value="&lt;div&gt;- BPLCNM&lt;/div&gt;- DTLSTATENM&lt;br style=&quot;padding: 0px; margin: 0px;&quot;&gt;- TRDPJUBNSENM&lt;br style=&quot;padding: 0px; margin: 0px;&quot;&gt;- ROPNYMD&lt;br style=&quot;padding: 0px; margin: 0px;&quot;&gt;- DTLSTATEGBN&lt;br style=&quot;padding: 0px; margin: 0px;&quot;&gt;- FCTYSILJOBEPCNT&lt;br style=&quot;padding: 0px; margin: 0px;&quot;&gt;- MGTNO&lt;br style=&quot;padding: 0px; margin: 0px;&quot;&gt;- SITETEL&lt;br style=&quot;padding: 0px; margin: 0px;&quot;&gt;- RDNPOSTNO&lt;br style=&quot;padding: 0px; margin: 0px;&quot;&gt;- WTRSPLYFACILSENM&lt;br style=&quot;padding: 0px; margin: 0px;&quot;&gt;- SITEPOSTNO&lt;br style=&quot;padding: 0px; margin: 0px;&quot;&gt;- HOFFEPCNT&lt;br style=&quot;padding: 0px; margin: 0px;&quot;&gt;- WMEIPCNT&lt;br style=&quot;padding: 0px; margin: 0px;&quot;&gt;- FCTYPDTJOBEPCNT&lt;br style=&quot;padding: 0px; margin: 0px;&quot;&gt;- SITEWHLADDR&lt;br style=&quot;padding: 0px; margin: 0px;&quot;&gt;- UPTAENM&lt;br style=&quot;padding: 0px; margin: 0px;&quot;&gt;- BDNGOWNSENM&lt;br style=&quot;padding: 0px; margin: 0px;&quot;&gt;- CLGENDDT&lt;br style=&quot;padding: 0px; margin: 0px;&quot;&gt;- OPNSFTEAMCODE&lt;br style=&quot;padding: 0px; margin: 0px;&quot;&gt;- CLGSTDT&lt;br style=&quot;padding: 0px; margin: 0px;&quot;&gt;- X&lt;br style=&quot;padding: 0px; margin: 0px;&quot;&gt;- ISREAM&lt;br style=&quot;padding: 0px; margin: 0px;&quot;&gt;- MONAM&lt;br style=&quot;padding: 0px; margin: 0px;&quot;&gt;- APVCANCELYMD&lt;br style=&quot;padding: 0px; margin: 0px;&quot;&gt;- DCBYMD&lt;br style=&quot;padding: 0px; margin: 0px;&quot;&gt;- RDNWHLADDR&lt;br style=&quot;padding: 0px; margin: 0px;&quot;&gt;- LASTMODTS&lt;br style=&quot;padding: 0px; margin: 0px;&quot;&gt;- SNTUPTAENM&lt;br style=&quot;padding: 0px; margin: 0px;&quot;&gt;- UPDATEGBN&lt;br style=&quot;padding: 0px; margin: 0px;&quot;&gt;- FCTYOWKEPCNT&lt;br style=&quot;padding: 0px; margin: 0px;&quot;&gt;- MANEIPCNT&lt;br style=&quot;padding: 0px; margin: 0px;&quot;&gt;- Y&lt;br style=&quot;padding: 0px; margin: 0px;&quot;&gt;- APVPERMYMD&lt;br style=&quot;padding: 0px; margin: 0px;&quot;&gt;- LVSENM&lt;br style=&quot;padding: 0px; margin: 0px;&quot;&gt;- TOTEPNUM&lt;br style=&quot;padding: 0px; margin: 0px;&quot;&gt;- MULTUSNUPSOYN&lt;br style=&quot;padding: 0px; margin: 0px;&quot;&gt;- TRDSTATEGBN&lt;br style=&quot;padding: 0px; margin: 0px;&quot;&gt;- TRDSTATENM&lt;br style=&quot;padding: 0px; margin: 0px;&quot;&gt;- SITEAREA&lt;br style=&quot;padding: 0px; margin: 0px;&quot;&gt;UPDATEDT&lt;br style=&quot;padding: 0px; margin: 0px;&quot;&gt;JTUPSOMAINEDF&lt;br style=&quot;padding: 0px; margin: 0px;&quot;&gt;FACILTOTSCP&lt;br style=&quot;padding: 0px; margin: 0px;&quot;&gt;JTUPSOASGNNO&lt;br style=&quot;padding: 0px; margin: 0px;&quot;&gt;HOMEPAGE" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="RS2OPRWRwBh1YJsDiA-l-34" vertex="1">
+          <mxGeometry y="26" width="160" height="664" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-36" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="RS2OPRWRwBh1YJsDiA-l-34" vertex="1">
+          <mxGeometry y="690" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-37" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="RS2OPRWRwBh1YJsDiA-l-34" vertex="1">
+          <mxGeometry y="698" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-38" value="" style="endArrow=none;html=1;rounded=0;entryX=0.025;entryY=0.018;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.724;exitY=0.941;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="RS2OPRWRwBh1YJsDiA-l-28" target="RS2OPRWRwBh1YJsDiA-l-35" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1044" y="1840" as="sourcePoint" />
+            <mxPoint x="1054" y="1890" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-39" value="FavoriteStoreVO" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-690" y="1795" width="160" height="98" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-40" value="- storeName : String&lt;div&gt;- userId : String&lt;/div&gt;&lt;div&gt;- Long : userIdx&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="RS2OPRWRwBh1YJsDiA-l-39" vertex="1">
+          <mxGeometry y="26" width="160" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-41" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="RS2OPRWRwBh1YJsDiA-l-39" vertex="1">
+          <mxGeometry y="90" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-42" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="RS2OPRWRwBh1YJsDiA-l-16" target="RS2OPRWRwBh1YJsDiA-l-39" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="90" y="1987" as="sourcePoint" />
+            <mxPoint x="140" y="1937" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-44" value="CommonController" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-800" y="2117" width="230" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-45" value="@GetMapping(/favoriteList)&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="RS2OPRWRwBh1YJsDiA-l-44" vertex="1">
+          <mxGeometry y="26" width="230" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-46" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="RS2OPRWRwBh1YJsDiA-l-44" vertex="1">
+          <mxGeometry y="52" width="230" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-47" value="+ favoriteList() : ModelAndView" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="RS2OPRWRwBh1YJsDiA-l-44" vertex="1">
+          <mxGeometry y="60" width="230" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-49" value="StoreMapper2" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-945" y="2880" width="470" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-50" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="RS2OPRWRwBh1YJsDiA-l-49" vertex="1">
+          <mxGeometry y="26" width="470" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-51" value="+&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;getAllStores(): List&amp;lt;StoreInfoVO&amp;gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+ insertFavoriteStore(map: HashMap&amp;lt;String, Object&amp;gt;): void&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+ deleteFavoriteStore(map: HashMap&amp;lt;String, Object&amp;gt;): void&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+ getFavoriteStores(userId: Long): List&amp;lt;StoreInfoVO&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+ getAllFavoriteStores(): List&amp;lt;FavoriteStoreVO&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+ favoriteCount(): List&amp;lt;HashMap&amp;lt;String, Object&amp;gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+ favoriteExist(map: HashMap&amp;lt;String, Object&amp;gt;): int&lt;/span&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="RS2OPRWRwBh1YJsDiA-l-49" vertex="1">
+          <mxGeometry y="34" width="470" height="136" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-52" value="StoreService2Impl" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-35" y="2600" width="390" height="278" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-53" value="&lt;strong&gt;Attributes&lt;/strong&gt;&lt;ul&gt;&lt;li&gt;storeMapper: StoreMapper2&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="RS2OPRWRwBh1YJsDiA-l-52" vertex="1">
+          <mxGeometry y="26" width="390" height="94" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-54" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="RS2OPRWRwBh1YJsDiA-l-52" vertex="1">
+          <mxGeometry y="120" width="390" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-55" value="+&amp;nbsp;&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;getAllStores(): List&amp;lt;StoreInfoVO&amp;gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+ saveFavoriteStore(storeName: String, HttpServletRequest request): boolean&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+ removeFavoriteStore(storeName: String, HttpServletRequest request): void&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+ getFavoriteStores(userId: Long): List&amp;lt;StoreInfoVO&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+ getAllFavoriteStores(): List&amp;lt;HashMap&amp;lt;String, Object&amp;gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="RS2OPRWRwBh1YJsDiA-l-52" vertex="1">
+          <mxGeometry y="128" width="390" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-56" value="favoriteListController" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-945" y="2590" width="410" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-57" value="&lt;strong&gt;Attributes&lt;/strong&gt;&lt;ul&gt;&lt;li&gt;storeService: StoreService2&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="RS2OPRWRwBh1YJsDiA-l-56" vertex="1">
+          <mxGeometry y="26" width="410" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-58" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="RS2OPRWRwBh1YJsDiA-l-56" vertex="1">
+          <mxGeometry y="110" width="410" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-59" value="+ addFavorite(storeName: String, request: HttpServletRequest): ResponseEntity&amp;lt;?&amp;gt;&lt;div&gt;+&amp;nbsp;removeFav(storeName: String, request: HttpServletRequest): ResponseEntity&amp;lt;?&amp;gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="RS2OPRWRwBh1YJsDiA-l-56" vertex="1">
+          <mxGeometry y="118" width="410" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-60" value="StoreService2" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-440" y="2600" width="330" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-61" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="RS2OPRWRwBh1YJsDiA-l-60" vertex="1">
+          <mxGeometry y="26" width="330" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-62" value="+&amp;nbsp;getAllStores(): List&amp;lt;StoreInfoVO&amp;gt;&lt;div&gt;+&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;saveFavoriteStore(storeName: String, HttpServletRequest request): boolean&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;removeFavoriteStore(storeName: String, HttpServletRequest request): void&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+ getFavoriteStores(userId: Long): List&amp;lt;StoreInfoVO&amp;gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;getAllFavoriteStores():&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+ List&amp;lt;HashMap&amp;lt;String, Object&amp;gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="RS2OPRWRwBh1YJsDiA-l-60" vertex="1">
+          <mxGeometry y="34" width="330" height="146" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-72" value="&lt;h3&gt;클래스 관계&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;code&gt;FavoriteStoreController&lt;/code&gt;는 &lt;code&gt;StoreService2&lt;/code&gt;를 사용하여 즐겨찾기를 추가 및 삭제합니다.&lt;/li&gt;&lt;li&gt;&lt;code&gt;StoreService2Impl&lt;/code&gt;은 &lt;code&gt;StoreService2&lt;/code&gt; 인터페이스를 구현하며, &lt;code&gt;StoreMapper2&lt;/code&gt;를 통해 데이터베이스와 상호작용합니다.&lt;/li&gt;&lt;li&gt;&lt;code&gt;findOften.html&lt;/code&gt;에서 사용되는 JavaScript는 주로 사용자 인터페이스를 관리하고 API와의 통신을 처리합니다.&lt;/li&gt;&lt;li&gt;HTML 요소들은 JavaScript 함수와 연결되어 이벤트를 처리합니다.&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="-950" y="2410" width="680" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-73" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1.003;exitY=0.964;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="RS2OPRWRwBh1YJsDiA-l-57" target="RS2OPRWRwBh1YJsDiA-l-62" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-510" y="2830" as="sourcePoint" />
+            <mxPoint x="-460" y="2780" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-74" value="" style="endArrow=none;html=1;rounded=0;entryX=0.008;entryY=0.968;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="RS2OPRWRwBh1YJsDiA-l-62" target="RS2OPRWRwBh1YJsDiA-l-53" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-510" y="2830" as="sourcePoint" />
+            <mxPoint x="-460" y="2780" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-82" value="StoreMapper" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-110" y="3690" width="280" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-83" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="RS2OPRWRwBh1YJsDiA-l-82" vertex="1">
+          <mxGeometry y="26" width="280" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-84" value="&lt;span style=&quot;background-color: initial;&quot;&gt;insertStore(StoreVO storeVO) : void&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;selectAll() : List&amp;lt;HashMap&amp;lt;String, Object&amp;gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;selectOne(Long : mgtNo) : StoreVO&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;selectList(StoreVO e) : List&amp;lt;StoreVO&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="RS2OPRWRwBh1YJsDiA-l-82" vertex="1">
+          <mxGeometry y="34" width="280" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-85" value="ApiController" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-490" y="3600" width="233" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-86" value="&lt;div&gt;-&amp;nbsp;storeService : StoreService&lt;/div&gt;&lt;div&gt;- storeService2 : StoreService2&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="RS2OPRWRwBh1YJsDiA-l-85" vertex="1">
+          <mxGeometry y="26" width="233" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-87" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="RS2OPRWRwBh1YJsDiA-l-85" vertex="1">
+          <mxGeometry y="70" width="233" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-88" value="+ getStoreCoords(@RequestParam String sitewhladdr) : ResponseEntity&amp;lt;?&amp;gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="RS2OPRWRwBh1YJsDiA-l-85" vertex="1">
+          <mxGeometry y="78" width="233" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-89" value="StoreService" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-118.5" y="3430" width="400" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-90" value="-&amp;nbsp;storeMapper : StoreMapper&lt;div&gt;-&amp;nbsp;storeInfoMapper : StoreInfoMapper&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="RS2OPRWRwBh1YJsDiA-l-89" vertex="1">
+          <mxGeometry y="26" width="400" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-91" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="RS2OPRWRwBh1YJsDiA-l-89" vertex="1">
+          <mxGeometry y="80" width="400" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-92" value="+&amp;nbsp;getAllStore() : List&amp;lt;HashMap&amp;lt;String, Object&amp;gt;&amp;gt;&lt;div&gt;+&amp;nbsp;getStoreByAddress(String sitewhladdr) : StoreVO&lt;/div&gt;&lt;div&gt;+&amp;nbsp;getShopsByKeyword(String keyword) : List&amp;lt;HashMap&amp;lt;String, Object&amp;gt;&amp;gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="RS2OPRWRwBh1YJsDiA-l-89" vertex="1">
+          <mxGeometry y="88" width="400" height="102" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-100" value="&lt;h3&gt;클래스 관계&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;code&gt;ApiController&lt;/code&gt;는 &lt;code&gt;StoreService&lt;/code&gt;를 의존합니다.&lt;/li&gt;&lt;li&gt;&lt;code&gt;CommonController&lt;/code&gt;는 &lt;code&gt;MemberService&lt;/code&gt;와 &lt;code&gt;StoreService2&lt;/code&gt;를 의존합니다.&lt;/li&gt;&lt;li&gt;&lt;code&gt;StoreService&lt;/code&gt;는 &lt;code&gt;StoreMapper&lt;/code&gt;를 의존합니다.&lt;/li&gt;&lt;li&gt;&lt;code&gt;StoreMapper&lt;/code&gt;는 데이터베이스와의 상호작용을 정의합니다.&lt;/li&gt;&lt;li&gt;&lt;code&gt;StoreVO&lt;/code&gt;는 데이터 구조를 정의하며, &lt;code&gt;StoreService&lt;/code&gt;와 &lt;code&gt;StoreMapper&lt;/code&gt;에서 사용됩니다.&lt;/li&gt;&lt;li&gt;&lt;code&gt;StoreList.html&lt;/code&gt;은 사용자 인터페이스를 제공하며, &lt;code&gt;storeList.js&lt;/code&gt;는 UI의 동작을 관리합니다.&lt;/li&gt;&lt;li&gt;StoreList.html은 CommonController 에서 @RequestMapping(&quot;/member&quot;) 안에 @GetMapping(&quot;/storeList&quot;) 로 접근한다.&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="-762" y="3180" width="690" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-101" value="" style="endArrow=classic;html=1;rounded=0;entryX=-0.004;entryY=0.907;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1.004;exitY=1.104;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="RS2OPRWRwBh1YJsDiA-l-86" target="RS2OPRWRwBh1YJsDiA-l-90" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-377" y="3650" as="sourcePoint" />
+            <mxPoint x="-327" y="3600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-102" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.376;exitY=1.063;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="RS2OPRWRwBh1YJsDiA-l-92" target="RS2OPRWRwBh1YJsDiA-l-82" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-37" y="3610" as="sourcePoint" />
+            <mxPoint x="13" y="3560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-103" value="" style="endArrow=none;html=1;rounded=0;entryX=1.001;entryY=0.743;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="Clq-VxUI-hap1JjSjyl6-5" target="RS2OPRWRwBh1YJsDiA-l-90" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380.02999999999975" y="3504.5319999999992" as="sourcePoint" />
+            <mxPoint x="13" y="3670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-104" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="RS2OPRWRwBh1YJsDiA-l-84" target="Clq-VxUI-hap1JjSjyl6-5" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="173" y="3700" as="sourcePoint" />
+            <mxPoint x="382.3499999999999" y="3684.852" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-130" value="&lt;font style=&quot;font-size: 72px;&quot;&gt;&lt;b&gt;DB&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="1274" y="1490" width="130" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-132" value="비회원" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
+          <mxGeometry x="-503.5" y="590" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-133" value="회원" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
+          <mxGeometry x="-503.5" y="1150" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-134" value="지도 이용" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-148.5" y="450" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-135" value="메인 페이지" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-388.5" y="580" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-136" value="가게 검색" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-148.5" y="580" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-137" value="회원 가입" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-148.5" y="710" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-138" value="검색 결과 마크업" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="21.5" y="580" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-142" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="RS2OPRWRwBh1YJsDiA-l-135" target="RS2OPRWRwBh1YJsDiA-l-137" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="41.5" y="770" as="sourcePoint" />
+            <mxPoint x="91.5" y="720" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-143" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="RS2OPRWRwBh1YJsDiA-l-135" target="RS2OPRWRwBh1YJsDiA-l-136" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="41.5" y="770" as="sourcePoint" />
+            <mxPoint x="91.5" y="720" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-144" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="RS2OPRWRwBh1YJsDiA-l-135" target="RS2OPRWRwBh1YJsDiA-l-134" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="41.5" y="770" as="sourcePoint" />
+            <mxPoint x="91.5" y="720" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-145" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="RS2OPRWRwBh1YJsDiA-l-136" target="RS2OPRWRwBh1YJsDiA-l-138" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="41.5" y="690" as="sourcePoint" />
+            <mxPoint x="91.5" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-149" value="즐겨찾기&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-325.5" y="940" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-150" value="성동구 빵집리스트 조회" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-118.5" y="880" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-151" value="전체회원 즐겨찾기 순위" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-123.5" y="970" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-152" value="즐겨찾기 추가,삭제" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-103.5" y="1060" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-153" value="검색" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-103.5" y="1150" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-155" value="지도에 마크업 및 가게 상세정보&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="54.5" y="1150" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-156" value="마이페이지" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-320.5" y="1280" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-157" value="회원 정보 수정" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-110.5" y="1250" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-158" value="회원 탈퇴" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-110.5" y="1350" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-159" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="RS2OPRWRwBh1YJsDiA-l-156" target="RS2OPRWRwBh1YJsDiA-l-157" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-298.5" y="1330" as="sourcePoint" />
+            <mxPoint x="-248.5" y="1280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-160" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="RS2OPRWRwBh1YJsDiA-l-156" target="RS2OPRWRwBh1YJsDiA-l-158" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-298.5" y="1330" as="sourcePoint" />
+            <mxPoint x="-248.5" y="1280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-161" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="RS2OPRWRwBh1YJsDiA-l-149" target="RS2OPRWRwBh1YJsDiA-l-153" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-298.5" y="1250" as="sourcePoint" />
+            <mxPoint x="-248.5" y="1200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-162" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="RS2OPRWRwBh1YJsDiA-l-149" target="RS2OPRWRwBh1YJsDiA-l-152" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-298.5" y="1250" as="sourcePoint" />
+            <mxPoint x="-248.5" y="1200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-163" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="RS2OPRWRwBh1YJsDiA-l-153" target="RS2OPRWRwBh1YJsDiA-l-155" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-298.5" y="1250" as="sourcePoint" />
+            <mxPoint x="-248.5" y="1200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-164" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="RS2OPRWRwBh1YJsDiA-l-149" target="RS2OPRWRwBh1YJsDiA-l-151" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-298.5" y="1250" as="sourcePoint" />
+            <mxPoint x="-248.5" y="1200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-165" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="RS2OPRWRwBh1YJsDiA-l-149" target="RS2OPRWRwBh1YJsDiA-l-150" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-298.5" y="1080" as="sourcePoint" />
+            <mxPoint x="-248.5" y="1030" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-169" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="RS2OPRWRwBh1YJsDiA-l-133" target="RS2OPRWRwBh1YJsDiA-l-149" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-298.5" y="1170" as="sourcePoint" />
+            <mxPoint x="-248.5" y="1120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-170" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="RS2OPRWRwBh1YJsDiA-l-132" target="RS2OPRWRwBh1YJsDiA-l-135" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-138.5" y="820" as="sourcePoint" />
+            <mxPoint x="-88.5" y="770" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-171" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="RS2OPRWRwBh1YJsDiA-l-156" target="RS2OPRWRwBh1YJsDiA-l-133" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-298.5" y="1250" as="sourcePoint" />
+            <mxPoint x="-248.5" y="1200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-176" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="RS2OPRWRwBh1YJsDiA-l-132" target="RS2OPRWRwBh1YJsDiA-l-133" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-648.5" y="810" as="sourcePoint" />
+            <mxPoint x="-488.5" y="810" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-177" value="&lt;font style=&quot;font-size: 36px;&quot;&gt;&lt;b&gt;유스케이스 다이어그램&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="-718.5" y="350" width="390" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RS2OPRWRwBh1YJsDiA-l-178" value="&lt;font style=&quot;font-size: 36px;&quot;&gt;&lt;b&gt;클래스 다이어그램&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="-950" y="1490" width="320" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Clq-VxUI-hap1JjSjyl6-4" value="StoreVO" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="385" y="3400" width="280" height="678" as="geometry" />
+        </mxCell>
+        <mxCell id="Clq-VxUI-hap1JjSjyl6-5" value="- opnsfteamcode : String // 개방자치단체코드&lt;div&gt;- mgtNo : String // 관리번호&lt;/div&gt;&lt;div&gt;-&amp;nbsp;&lt;span style=&quot;white-space: pre; background-color: rgb(255, 255, 255);&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;apvpermymd : String // 인허가 일자&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre; background-color: rgb(255, 255, 255);&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot; face=&quot;Helvetica&quot;&gt;- &lt;/font&gt;&lt;/span&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;apvcancelymd : String&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;// 인허가취소일자&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;&lt;font style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;- &lt;/span&gt;&lt;/font&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); white-space: pre;&quot;&gt;trdstategbn : String&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); white-space: pre;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); white-space: pre;&quot;&gt;// 영업상태코드&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); white-space: pre;&quot;&gt;- &lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); white-space: pre;&quot;&gt;trdstatenm : String&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); white-space: pre;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); white-space: pre;&quot;&gt;// 영업상태명&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;padding: 0px 0px 0px 2px;&quot;&gt;&lt;div style=&quot;white-space: pre;&quot;&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- dtlstategbn : String // 상세영업상태코드&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- dtlstatenm : String // 상세영업상태명&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- dcbymd : String // 폐업일자&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- clgstdt : String // 휴업시작일자&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- clgenddt : String // 휴업종료일자&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;- &lt;/font&gt;&lt;font face=&quot;Helvetica&quot;&gt;ropnymd : String // 재개업일자&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- sitetel : String // 전화번호&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- sitearea : String // 소재지면적&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- sitepostno : String // 소재지우편번호&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- sitewhladdr : String // 지번주소&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- rdnwhladdr : String // 도로명우편번호&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- bplcnm : String // 사업장명&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- lastmodts : LocalDateTime // 최종수정일자&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- updategbn : String // 데이터갱신구분&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- updatedt : String // 데이터갱신일자&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- uptaenm : String // 업태구분명&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- x : String // 좌표정보(X)&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- y : String // 좌표정보(Y)&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- sntuptaenm : String // 위생업태명&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- maneipcnt : String // 남성종사자수&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- wmeipcnt : String // 여성종사자&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- trdpjubnsenm : String // 영업장주변 구분명&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- lvsenm : String // 등급구분명&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- wtrsplyfacilsenm : String // 급수시설구분명&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- totepnum : String // 총인원&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- hoffepcnt : String // 본사종업원수&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- fctyowkepcnt : String // 공장사무직종업원수&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- fctysiljobepcnt : String // 공장판매직종업원수&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- fctypdtjobepcnt : String // 공장생산직종업원수&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- bdngownsenm : String // 건물소유구분명&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- isream : String // 보증액&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- monam : String // 월세액&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- multusnupsoyn : String // 다중이용업소여부&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- faciltotscp : String // 시설총규모&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- jtupsoasgnno : String // 전통업소지정번호&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- jtupsomainedf : String // 전통업소주된음식&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- homepage : String // 홈페이지&lt;/font&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Clq-VxUI-hap1JjSjyl6-4" vertex="1">
+          <mxGeometry y="26" width="280" height="644" as="geometry" />
+        </mxCell>
+        <mxCell id="Clq-VxUI-hap1JjSjyl6-6" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="Clq-VxUI-hap1JjSjyl6-4" vertex="1">
+          <mxGeometry y="670" width="280" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Clq-VxUI-hap1JjSjyl6-8" value="CommonController" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-945" y="3390" width="261" height="750" as="geometry" />
+        </mxCell>
+        <mxCell id="Clq-VxUI-hap1JjSjyl6-9" value="- memberService : MemberService&lt;div&gt;- storeService : StoreService2&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Clq-VxUI-hap1JjSjyl6-8" vertex="1">
+          <mxGeometry y="26" width="261" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Clq-VxUI-hap1JjSjyl6-10" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="Clq-VxUI-hap1JjSjyl6-8" vertex="1">
+          <mxGeometry y="86" width="261" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Clq-VxUI-hap1JjSjyl6-11" value="&lt;div&gt;+ login(@RequestParam(&lt;span style=&quot;background-color: initial;&quot;&gt;value=&quot;userID&quot;, required=false, defaultValue=&quot;&quot;)String userID,&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;@RequestParam(&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;value=&quot;password&quot;, required=false, defaultValue=&quot;&quot;)String password&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;) : ModelAndView&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+ loginProc(@ModelAttribute MemberShipVO memberShipVO,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;HttpServletRequest request) : ModelAndView&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+ logout(HttpServletRequest request) ; String&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+ join() : ModelAndView&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+ joinProc(@ModelAttribute MemberShipVO memberShipVO) : String&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+ joinProc2(@RequestBody JoinRequest joinRequest) : ResponseEntity&amp;lt;?&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+ checkUserID(@PathVariable(value=&quot;userID&quot;) String userID) : ResponseEntity&amp;lt;?&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+ checkEmail(@PathVariable(value=&quot;email&quot;) String email) : ResponseEntity&amp;lt;?&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+ findID() : String&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+ findIDByEmail(@PathVariable(value=&quot;email&quot;) String email) : ResponseEntity&amp;lt;?&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+ findPW() : String&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+ changePW(@RequestBody ChangePwRequest changePwRequest) : ResponseEntity&amp;lt;?&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+ findOften(HttpServlet request, Model model, @RequestParam(value=&quot;shopName&quot;, required=false, defaultValue=&quot;&quot;) String shopName) : ModelAndView&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+ showStoreList(Model model, @RequestParam(value=&quot;shopText&quot;, required=false, defaultValue=&quot;&quot;) String shopText) : String&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;div style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;+ myPage(request: HttpServletRequest) : modelAndView&lt;/div&gt;&lt;div style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;span class=&quot;hljs-built_in&quot;&gt;+isEmailAvailable&lt;/span&gt;(email: String, request: HttpServletRequest): ResponseEntity&amp;lt;?&amp;gt;&lt;/div&gt;&lt;div style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;+myInfo(request: HttpServletRequest) : ModelAndView&lt;/div&gt;&lt;div style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;+updateInfo(request: HttpServletRequest, memberVO: MemberShipVO) : ModelAndView&lt;/div&gt;&lt;div style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;+ memberDrop(): ModelAndView&lt;/div&gt;&lt;div style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;+ memberDropProc(userID: String, password: String): ModelAndView&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Clq-VxUI-hap1JjSjyl6-8" vertex="1">
+          <mxGeometry y="94" width="261" height="656" as="geometry" />
+        </mxCell>
+        <mxCell id="Clq-VxUI-hap1JjSjyl6-12" value="AdminController" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-600" y="3830" width="300" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="Clq-VxUI-hap1JjSjyl6-13" value="- memberService : MemberService" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Clq-VxUI-hap1JjSjyl6-12" vertex="1">
+          <mxGeometry y="26" width="300" height="53" as="geometry" />
+        </mxCell>
+        <mxCell id="Clq-VxUI-hap1JjSjyl6-14" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="Clq-VxUI-hap1JjSjyl6-12" vertex="1">
+          <mxGeometry y="79" width="300" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Clq-VxUI-hap1JjSjyl6-15" value="&lt;div&gt;+ memberList(@ModelAttribute MemberShipVO memberShipVO) : ModelAndView&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Clq-VxUI-hap1JjSjyl6-12" vertex="1">
+          <mxGeometry y="87" width="300" height="103" as="geometry" />
+        </mxCell>
+        <mxCell id="Clq-VxUI-hap1JjSjyl6-16" value="JoinRequest" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-230" y="3830" width="160" height="194" as="geometry" />
+        </mxCell>
+        <mxCell id="Clq-VxUI-hap1JjSjyl6-17" value="- userID : String&lt;div&gt;- password : String&lt;/div&gt;&lt;div&gt;- password2 : String&lt;/div&gt;&lt;div&gt;- phoneNumber : String&lt;/div&gt;&lt;div&gt;- username : String&lt;/div&gt;&lt;div&gt;- email : String&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Clq-VxUI-hap1JjSjyl6-16" vertex="1">
+          <mxGeometry y="26" width="160" height="98" as="geometry" />
+        </mxCell>
+        <mxCell id="Clq-VxUI-hap1JjSjyl6-18" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="Clq-VxUI-hap1JjSjyl6-16" vertex="1">
+          <mxGeometry y="124" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Clq-VxUI-hap1JjSjyl6-19" value="&lt;div&gt;@Getter&lt;/div&gt;&lt;div&gt;@Setter&lt;/div&gt;&lt;div&gt;@ToString&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Clq-VxUI-hap1JjSjyl6-16" vertex="1">
+          <mxGeometry y="132" width="160" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="Clq-VxUI-hap1JjSjyl6-20" value="ChangePwRequest" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-9" y="3830" width="181" height="139" as="geometry" />
+        </mxCell>
+        <mxCell id="Clq-VxUI-hap1JjSjyl6-21" value="- email : String&lt;div&gt;- userID : String&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Clq-VxUI-hap1JjSjyl6-20" vertex="1">
+          <mxGeometry y="26" width="181" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="Clq-VxUI-hap1JjSjyl6-22" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="Clq-VxUI-hap1JjSjyl6-20" vertex="1">
+          <mxGeometry y="75" width="181" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Clq-VxUI-hap1JjSjyl6-23" value="&lt;div&gt;@Getter&lt;/div&gt;&lt;div&gt;@Setter&lt;/div&gt;&lt;div&gt;@ToString&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Clq-VxUI-hap1JjSjyl6-20" vertex="1">
+          <mxGeometry y="83" width="181" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="Clq-VxUI-hap1JjSjyl6-24" value="&lt;div&gt;StringUtil&lt;/div&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="30" y="3999" width="260" height="93" as="geometry" />
+        </mxCell>
+        <mxCell id="Clq-VxUI-hap1JjSjyl6-25" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="Clq-VxUI-hap1JjSjyl6-24" vertex="1">
+          <mxGeometry y="28" width="260" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Clq-VxUI-hap1JjSjyl6-26" value="&lt;div&gt;+ generateRandomString(int len) : String&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Clq-VxUI-hap1JjSjyl6-24" vertex="1">
+          <mxGeometry y="36" width="260" height="57" as="geometry" />
+        </mxCell>
+        <mxCell id="Clq-VxUI-hap1JjSjyl6-27" value="&lt;div&gt;&amp;lt;&amp;lt;VO&amp;gt;&amp;gt;&lt;/div&gt;memberShipVO" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=37;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-894.5" y="4190" width="160" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="Clq-VxUI-hap1JjSjyl6-28" value="&lt;div&gt;- userID : String&lt;/div&gt;&lt;div&gt;- password : String&lt;/div&gt;&lt;div&gt;- username : String&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;- email : String&lt;/div&gt;&lt;div&gt;- phoneNumber : String&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- regDate : date&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- dropDate : date&lt;/span&gt;&lt;/div&gt;&lt;div&gt;- isUse : int&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Clq-VxUI-hap1JjSjyl6-27" vertex="1">
+          <mxGeometry y="37" width="160" height="143" as="geometry" />
+        </mxCell>
+        <mxCell id="Clq-VxUI-hap1JjSjyl6-29" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="Clq-VxUI-hap1JjSjyl6-27" vertex="1">
+          <mxGeometry y="180" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Clq-VxUI-hap1JjSjyl6-30" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;- MemberShipVO(Long idx, Long isAdmin, String userID, String password, String username, String email, String phoneNumber, LocalDateTime regDate, int isUse, LocalDateTime dropDate)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Clq-VxUI-hap1JjSjyl6-27" vertex="1">
+          <mxGeometry y="188" width="160" height="202" as="geometry" />
+        </mxCell>
+        <mxCell id="Clq-VxUI-hap1JjSjyl6-31" value="MemberMapper" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-660" y="4110" width="261" height="490" as="geometry" />
+        </mxCell>
+        <mxCell id="Clq-VxUI-hap1JjSjyl6-32" value="- session : SqlSession" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Clq-VxUI-hap1JjSjyl6-31" vertex="1">
+          <mxGeometry y="26" width="261" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="Clq-VxUI-hap1JjSjyl6-33" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="Clq-VxUI-hap1JjSjyl6-31" vertex="1">
+          <mxGeometry y="64" width="261" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Clq-VxUI-hap1JjSjyl6-34" value="&lt;div&gt;+ selectList(MemberShipVO memberShipVO) : List&amp;lt;MemberShipVO&amp;gt;&lt;/div&gt;&lt;div&gt;+ selectOne(MemberShipVO memberShipVO) : MemberShipVO&lt;/div&gt;&lt;div&gt;+ insert(MemberShipVO memberShipVO) : void&lt;/div&gt;&lt;div&gt;+ checkUserID(String userID) : int&lt;/div&gt;&lt;div&gt;+ checkEmail(String email) : int&lt;/div&gt;&lt;div&gt;+ findID(String email) : String&lt;/div&gt;&lt;div&gt;+ findPW(MemberShipVO memberShipVO) : Long&lt;/div&gt;&lt;div&gt;+ updatePW(MemberShipVO memberShipVO) : void&lt;/div&gt;&lt;div&gt;&lt;div&gt;+ checkUserIdPw(memberShipVO: MemberShipVO) : int&lt;/div&gt;&lt;div&gt;+ updataInfo(memberShipVO: MemberShipVO) : void&lt;/div&gt;&lt;div&gt;+ selectMemberByIdx(idx: Long) : memberShipVO&lt;/div&gt;&lt;div&gt;&lt;br style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Clq-VxUI-hap1JjSjyl6-31" vertex="1">
+          <mxGeometry y="72" width="261" height="418" as="geometry" />
+        </mxCell>
+        <mxCell id="Clq-VxUI-hap1JjSjyl6-35" value="MemberService" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-340" y="4314" width="260" height="620" as="geometry" />
+        </mxCell>
+        <mxCell id="Clq-VxUI-hap1JjSjyl6-36" value="&lt;div&gt;- mapper : MemberMapper&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Clq-VxUI-hap1JjSjyl6-35" vertex="1">
+          <mxGeometry y="26" width="260" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="Clq-VxUI-hap1JjSjyl6-37" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="Clq-VxUI-hap1JjSjyl6-35" vertex="1">
+          <mxGeometry y="92" width="260" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Clq-VxUI-hap1JjSjyl6-38" value="+ selectList(MemberShipVO e) : List&amp;lt;MemberShipVO&amp;gt;&lt;div&gt;+ selectOne(MemberShipVO e) : MemberShipVO&lt;/div&gt;&lt;div&gt;+ selectOne(String userID, String password) : MemberShipVO&lt;/div&gt;&lt;div&gt;+ insert(MemberShipVO e) : void&lt;/div&gt;&lt;div&gt;+ update(MemberShipVO e) : void&lt;/div&gt;&lt;div&gt;+ delete(MemberShipVO e) : void&lt;/div&gt;&lt;div&gt;+ checkUserID(String userID) : HashMap&amp;lt;String, Object&amp;gt;&lt;/div&gt;&lt;div&gt;+ checkEmail(String email) : HashMap&amp;lt;String, Object&amp;gt;&lt;/div&gt;&lt;div&gt;+ memberJoin(JoinRequest joinRequest) : HashMap&amp;lt;String, Object&amp;gt;&lt;/div&gt;&lt;div&gt;+ findID(String email) : HashMap&amp;lt;String, Object&amp;gt;&lt;/div&gt;&lt;div&gt;+ changePW(ChangePwRequest changePwRequest) : Object&lt;/div&gt;&lt;div&gt;+ selectAll() : List&amp;lt;StoreVO&amp;gt;&lt;/div&gt;&lt;div&gt;+ memberDrop(userID: String, password: String) : boolean&lt;div&gt;+ isEmailAvilable(email: String, request: HttpServletRequest): HashMap(String, Object&amp;gt;&lt;/div&gt;&lt;div&gt;+ updateInfo(request: httpServletRequest, memberShipVO: MemberShipVO): boolean&lt;/div&gt;&lt;div&gt;&lt;br style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Clq-VxUI-hap1JjSjyl6-35" vertex="1">
+          <mxGeometry y="100" width="260" height="520" as="geometry" />
+        </mxCell>
+        <mxCell id="Clq-VxUI-hap1JjSjyl6-39" value="&lt;div&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;/div&gt;CrudService&amp;lt;E&amp;gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=37;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-293" y="4080" width="160" height="156" as="geometry" />
+        </mxCell>
+        <mxCell id="Clq-VxUI-hap1JjSjyl6-40" value="selectList(E e) : List&amp;lt;E&amp;gt;&lt;div&gt;selectOne(E e) : E&lt;/div&gt;&lt;div&gt;insert(E e) : void&lt;/div&gt;&lt;div&gt;update(E e) : void&lt;/div&gt;&lt;div&gt;delete(E e) : void&lt;/div&gt;&lt;div&gt;selectAll() : List&amp;lt;StoreVO&amp;gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Clq-VxUI-hap1JjSjyl6-39" vertex="1">
+          <mxGeometry y="37" width="160" height="103" as="geometry" />
+        </mxCell>
+        <mxCell id="Clq-VxUI-hap1JjSjyl6-41" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="Clq-VxUI-hap1JjSjyl6-39" vertex="1">
+          <mxGeometry y="140" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Clq-VxUI-hap1JjSjyl6-42" value="&lt;div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Clq-VxUI-hap1JjSjyl6-39" vertex="1">
+          <mxGeometry y="148" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Clq-VxUI-hap1JjSjyl6-43" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;exitX=0.513;exitY=1.625;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="Clq-VxUI-hap1JjSjyl6-42" target="Clq-VxUI-hap1JjSjyl6-35" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-203" y="4261" as="sourcePoint" />
+            <mxPoint x="-43" y="4261" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DTKHWTS7_nwZ4_-FRMGd-1" value="StoreController" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-910" y="5183" width="293" height="156" as="geometry" />
+        </mxCell>
+        <mxCell id="DTKHWTS7_nwZ4_-FRMGd-2" value="- storeService :StoreService" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="DTKHWTS7_nwZ4_-FRMGd-1">
+          <mxGeometry y="26" width="293" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="DTKHWTS7_nwZ4_-FRMGd-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="DTKHWTS7_nwZ4_-FRMGd-1">
+          <mxGeometry y="90" width="293" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="DTKHWTS7_nwZ4_-FRMGd-4" value="&lt;div&gt;+ index(model : Model , request : HttpServletRequest) : String&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="DTKHWTS7_nwZ4_-FRMGd-1">
+          <mxGeometry y="98" width="293" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="DTKHWTS7_nwZ4_-FRMGd-5" value="&lt;h3&gt;클래스 관계&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;StoreController 는 메인페이지로 이동하는 컨트롤러입니다.&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;&lt;span style=&quot;font-family: Consolas; font-size: 13.3333px; text-align: center; white-space-collapse: preserve; background-color: rgb(212, 212, 212);&quot;&gt;WebConfig 클래스는 &lt;/span&gt;&lt;span style=&quot;font-family: Consolas; font-size: 13.3333px; text-align: center; white-space-collapse: preserve; background-color: rgb(212, 212, 212);&quot;&gt;SessionInterceptor 를 구현하고 있습니다&lt;/span&gt;&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b style=&quot;font-size: 13.3333px; white-space-collapse: preserve; font-family: Consolas; text-align: center;&quot;&gt;ApiController 는 메인페이지 데이터 검색할때 사용합니다&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-765" y="5040" width="470" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="DTKHWTS7_nwZ4_-FRMGd-6" value="storeInfoMapper" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-401.5" y="5410" width="160" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="DTKHWTS7_nwZ4_-FRMGd-7" value="+ serchHistory : String&lt;div&gt;+ findOften : String&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="DTKHWTS7_nwZ4_-FRMGd-6">
+          <mxGeometry y="26" width="160" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="DTKHWTS7_nwZ4_-FRMGd-8" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="DTKHWTS7_nwZ4_-FRMGd-6">
+          <mxGeometry y="90" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="DTKHWTS7_nwZ4_-FRMGd-9" value="&lt;div&gt;+ userUpData : void&lt;/div&gt;&lt;div&gt;+ userOut : void&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="DTKHWTS7_nwZ4_-FRMGd-6">
+          <mxGeometry y="98" width="160" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="DTKHWTS7_nwZ4_-FRMGd-14" value="&lt;span style=&quot;padding: 0px 0px 0px 2px;&quot;&gt;&lt;span style=&quot;font-family: Consolas; font-size: 10pt; white-space: pre;&quot;&gt;&lt;span style=&quot;background-color: rgb(212, 212, 212);&quot;&gt;TestController&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-908.5" y="5413.5" width="160" height="177" as="geometry" />
+        </mxCell>
+        <mxCell id="DTKHWTS7_nwZ4_-FRMGd-15" value="+ testService: TestService&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="DTKHWTS7_nwZ4_-FRMGd-14">
+          <mxGeometry y="26" width="160" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="DTKHWTS7_nwZ4_-FRMGd-16" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="DTKHWTS7_nwZ4_-FRMGd-14">
+          <mxGeometry y="90" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="DTKHWTS7_nwZ4_-FRMGd-17" value="&lt;div&gt;+ map : String&lt;/div&gt;+ selList : ResponseEntity&amp;lt;?&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="DTKHWTS7_nwZ4_-FRMGd-14">
+          <mxGeometry y="98" width="160" height="79" as="geometry" />
+        </mxCell>
+        <mxCell id="DTKHWTS7_nwZ4_-FRMGd-18" value="&lt;span style=&quot;padding: 0px 0px 0px 2px;&quot;&gt;&lt;span style=&quot;font-family: Consolas; font-size: 10pt; white-space: pre;&quot;&gt;&lt;span style=&quot;background-color: rgb(212, 212, 212);&quot;&gt;TestService&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-648.5" y="5413.5" width="160" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="DTKHWTS7_nwZ4_-FRMGd-19" value="&lt;div&gt;-storeInfoMapper : StoreInfoMapper&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="DTKHWTS7_nwZ4_-FRMGd-18">
+          <mxGeometry y="26" width="160" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="DTKHWTS7_nwZ4_-FRMGd-20" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="DTKHWTS7_nwZ4_-FRMGd-18">
+          <mxGeometry y="90" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="DTKHWTS7_nwZ4_-FRMGd-21" value="&lt;div&gt;+ insertItems (items&amp;nbsp; : List&amp;lt;HashMap&amp;lt;String, Object&amp;gt;&amp;gt;) : void&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ selList : List&amp;lt;StoreInfoVO&amp;gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="DTKHWTS7_nwZ4_-FRMGd-18">
+          <mxGeometry y="98" width="160" height="112" as="geometry" />
+        </mxCell>
+        <mxCell id="DTKHWTS7_nwZ4_-FRMGd-26" value="" style="endArrow=none;html=1;rounded=0;exitX=0.995;exitY=0.86;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.002;entryY=0.878;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="DTKHWTS7_nwZ4_-FRMGd-15" target="DTKHWTS7_nwZ4_-FRMGd-19">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-258.5" y="5620" as="sourcePoint" />
+            <mxPoint x="-208.5" y="5570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DTKHWTS7_nwZ4_-FRMGd-27" value="" style="endArrow=none;html=1;rounded=0;exitX=0.995;exitY=0.86;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-487.5" y="5500" as="sourcePoint" />
+            <mxPoint x="-398.5" y="5501" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DTKHWTS7_nwZ4_-FRMGd-28" value="&lt;font face=&quot;Consolas&quot;&gt;&lt;span style=&quot;font-size: 13.3333px; white-space: pre; background-color: rgb(212, 212, 212);&quot;&gt;SessionInterceptor&lt;/span&gt;&lt;/font&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=29;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-908.5" y="5680" width="202" height="136" as="geometry" />
+        </mxCell>
+        <mxCell id="DTKHWTS7_nwZ4_-FRMGd-29" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="DTKHWTS7_nwZ4_-FRMGd-28">
+          <mxGeometry y="29" width="202" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="DTKHWTS7_nwZ4_-FRMGd-30" value="&lt;div&gt;+ preHandle (request : HttpServletRequest ,&amp;nbsp;&lt;/div&gt;&lt;div&gt;response : HttpServletResponse ,&lt;/div&gt;&lt;div&gt;handler Object ) : boolean&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="DTKHWTS7_nwZ4_-FRMGd-28">
+          <mxGeometry y="37" width="202" height="99" as="geometry" />
+        </mxCell>
+        <mxCell id="DTKHWTS7_nwZ4_-FRMGd-31" value="&lt;font face=&quot;Consolas&quot;&gt;&lt;span style=&quot;font-size: 13.3333px; white-space: pre; background-color: rgb(212, 212, 212);&quot;&gt;WebConfig&lt;/span&gt;&lt;/font&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-630" y="5680" width="160" height="211" as="geometry" />
+        </mxCell>
+        <mxCell id="DTKHWTS7_nwZ4_-FRMGd-32" value="&lt;div&gt;- sessionInterceptor: SessionInterceptor&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="DTKHWTS7_nwZ4_-FRMGd-31">
+          <mxGeometry y="26" width="160" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="DTKHWTS7_nwZ4_-FRMGd-33" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="DTKHWTS7_nwZ4_-FRMGd-31">
+          <mxGeometry y="90" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="DTKHWTS7_nwZ4_-FRMGd-34" value="&lt;div&gt;+ addCorMappings (&lt;/div&gt;&lt;div&gt;registry : CorsRegistry ) : void&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ addInterceptors ( registry : InterceptorRegistry ) : void&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="DTKHWTS7_nwZ4_-FRMGd-31">
+          <mxGeometry y="98" width="160" height="113" as="geometry" />
+        </mxCell>
+        <mxCell id="DTKHWTS7_nwZ4_-FRMGd-35" value="ApiController" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-470" y="5180" width="233" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="DTKHWTS7_nwZ4_-FRMGd-36" value="&lt;div&gt;-&amp;nbsp;storeService : StoreService&lt;/div&gt;&lt;div&gt;- storeService2 : StoreService2&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="DTKHWTS7_nwZ4_-FRMGd-35">
+          <mxGeometry y="26" width="233" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="DTKHWTS7_nwZ4_-FRMGd-37" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="DTKHWTS7_nwZ4_-FRMGd-35">
+          <mxGeometry y="70" width="233" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="DTKHWTS7_nwZ4_-FRMGd-38" value="&lt;div&gt;+ searchShopByKeyword (&lt;span style=&quot;background-color: initial;&quot;&gt;@RequestParam String keyword&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;): ResponseEntity&amp;lt;?&amp;gt;&lt;/span&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="DTKHWTS7_nwZ4_-FRMGd-35">
+          <mxGeometry y="78" width="233" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="DTKHWTS7_nwZ4_-FRMGd-40" value="StoreinfoVO" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-118.5" y="5410" width="280" height="678" as="geometry" />
+        </mxCell>
+        <mxCell id="DTKHWTS7_nwZ4_-FRMGd-41" value="- opnsfteamcode : String // 개방자치단체코드&lt;div&gt;- mgtNo : String // 관리번호&lt;/div&gt;&lt;div&gt;-&amp;nbsp;&lt;span style=&quot;white-space: pre; background-color: rgb(255, 255, 255);&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;apvpermymd : String // 인허가 일자&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre; background-color: rgb(255, 255, 255);&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot; face=&quot;Helvetica&quot;&gt;- &lt;/font&gt;&lt;/span&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;apvcancelymd : String&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;// 인허가취소일자&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;&lt;font style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;- &lt;/span&gt;&lt;/font&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); white-space: pre;&quot;&gt;trdstategbn : String&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); white-space: pre;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); white-space: pre;&quot;&gt;// 영업상태코드&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); white-space: pre;&quot;&gt;- &lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); white-space: pre;&quot;&gt;trdstatenm : String&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); white-space: pre;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); white-space: pre;&quot;&gt;// 영업상태명&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;padding: 0px 0px 0px 2px;&quot;&gt;&lt;div style=&quot;white-space: pre;&quot;&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- dtlstategbn : String // 상세영업상태코드&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- dtlstatenm : String // 상세영업상태명&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- dcbymd : String // 폐업일자&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- clgstdt : String // 휴업시작일자&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- clgenddt : String // 휴업종료일자&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;- &lt;/font&gt;&lt;font face=&quot;Helvetica&quot;&gt;ropnymd : String // 재개업일자&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- sitetel : String // 전화번호&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- sitearea : String // 소재지면적&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- sitepostno : String // 소재지우편번호&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- sitewhladdr : String // 지번주소&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- rdnwhladdr : String // 도로명우편번호&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- bplcnm : String // 사업장명&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- lastmodts : LocalDateTime // 최종수정일자&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- updategbn : String // 데이터갱신구분&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- updatedt : String // 데이터갱신일자&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- uptaenm : String // 업태구분명&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- x : String // 좌표정보(X)&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- y : String // 좌표정보(Y)&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- sntuptaenm : String // 위생업태명&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- maneipcnt : String // 남성종사자수&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- wmeipcnt : String // 여성종사자&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- trdpjubnsenm : String // 영업장주변 구분명&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- lvsenm : String // 등급구분명&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- wtrsplyfacilsenm : String // 급수시설구분명&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- totepnum : String // 총인원&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- hoffepcnt : String // 본사종업원수&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- fctyowkepcnt : String // 공장사무직종업원수&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- fctysiljobepcnt : String // 공장판매직종업원수&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- fctypdtjobepcnt : String // 공장생산직종업원수&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- bdngownsenm : String // 건물소유구분명&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- isream : String // 보증액&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- monam : String // 월세액&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- multusnupsoyn : String // 다중이용업소여부&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- faciltotscp : String // 시설총규모&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- jtupsoasgnno : String // 전통업소지정번호&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- jtupsomainedf : String // 전통업소주된음식&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px; background-color: rgb(255, 255, 255);&quot;&gt;- homepage : String // 홈페이지&lt;/font&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="DTKHWTS7_nwZ4_-FRMGd-40">
+          <mxGeometry y="26" width="280" height="644" as="geometry" />
+        </mxCell>
+        <mxCell id="DTKHWTS7_nwZ4_-FRMGd-42" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="DTKHWTS7_nwZ4_-FRMGd-40">
+          <mxGeometry y="670" width="280" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="DTKHWTS7_nwZ4_-FRMGd-43" value="" style="endArrow=none;html=1;rounded=0;exitX=0.995;exitY=0.86;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-222" y="5518" as="sourcePoint" />
+            <mxPoint x="-133" y="5519" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
